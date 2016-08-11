@@ -26,29 +26,30 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-{% if site.github %}
-<link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+{% if jekyll.environment == "production" %}
+<link href="{{site.url}}/dist/css/bootstrap.min.css" rel="stylesheet">
 {% else %}
-<link href="./dist/css/bootstrap.css" rel="stylesheet">
+<link href="/dist/css/bootstrap.css" rel="stylesheet">
 {% endif %}
 {% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
   <!-- Optional Bootstrap Theme -->
-{% if site.github %}
-  <link href="data:text/css;charset=utf-8," data-href="./dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+{% if jekyll.environment == "production" %}
+  <link href="data:text/css;charset=utf-8," data-href="{{site.url}}/dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
 {% else %}
-  <link href="data:text/css;charset=utf-8," data-href="./dist/css/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet">
+  <link href="data:text/css;charset=utf-8," data-href="/dist/css/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet">
 {% endif %}
 {% endif %}
 
 <!-- Documentation extras -->
-{% if site.github %}
-<link href="./assets/css/docs.min.css" rel="stylesheet">
+{% if jekyll.environment == "production" %}
+<link href="{{site.url}}/assets/css/docs.min.css" rel="stylesheet">
+<script src="{{site.url}}/assets/js/ie-emulation-modes-warning.js"></script>
 {% else %}
-<link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link href="./assets/css/src/pygments-manni.css" rel="stylesheet">
-<link href="./assets/css/src/docs.css" rel="stylesheet">
+<link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="/assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="/assets/css/src/docs.css" rel="stylesheet">
+<script src="/assets/js/ie-emulation-modes-warning.js"></script>
 {% endif %}
-<script src="./assets/js/ie-emulation-modes-warning.js"></script>
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
