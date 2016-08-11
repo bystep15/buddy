@@ -17,18 +17,13 @@ gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  3.3.7
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+current_version:  0.1.0
+repo:             https://github.com/bystep15/buddy
 
 download:
   source:         https://github.com/twbs/bootstrap/archive/v3.3.7.zip
   dist:           https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip
   sass:           https://github.com/twbs/bootstrap-sass/archive/v3.3.7.tar.gz
-
-blog:             http://blog.getbootstrap.com
-expo:             http://expo.getbootstrap.com
-themes:           http://themes.getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
