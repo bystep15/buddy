@@ -1,11 +1,11 @@
 <div class="bs-docs-section">
   <h1 id="whats-included" class="page-header">What's included</h1>
 
-  <p class="lead">Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
+  <p class="lead">Buddy的JS部分会使用模块化组织和引用，CSS和其他部分和Bootstrap一致。</p>
 
   <div class="bs-callout bs-callout-warning" id="jquery-required">
     <h4>jQuery required</h4>
-    <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#template">starter template</a>. <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+    <p>为了可维护性，jQuery已经在<strong>具体模块中直接引用</strong><a href="#template">starter template</a>，各个模块之间不隐性相互依赖。</p>
   </div>
 
   <h2 id="whats-included-precompiled">Precompiled Bootstrap</h2>
