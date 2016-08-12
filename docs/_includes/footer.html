@@ -17,7 +17,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 
-{% if jekyll.environment == "production" %}
+{% if site.github %}
   <script src="{{site.url}}/assets/js/vendor/jquery.min.js"></script>
   <script src="{{site.url}}/dist/js/bootstrap.min.js"></script>
 {% else %}
@@ -25,7 +25,7 @@
   <script src="/dist/js/bootstrap.js"></script>
 {% endif %}
 
-{% if jekyll.environment == "production" %}
+{% if site.github %}
   <script src="{{site.url}}/assets/js/docs.min.js"></script>
 {% else %}
   {% for file in site.data.configBridge.paths.docsJs %}
@@ -35,7 +35,7 @@
 
 {% if page.slug == "customize" %}
   <script>var __configBridge = {{ site.data.configBridge.config | jsonify }}</script>
-  {% if jekyll.environment == "production" %}
+  {% if site.github %}
     <script src="{{site.url}}/assets/js/customize.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{site.url}}/assets/js/ie10-viewport-bug-workaround.js"></script>
